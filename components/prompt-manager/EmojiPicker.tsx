@@ -93,7 +93,8 @@ export const EmojiButton: React.FC<EmojiButtonProps> = ({
       `}
     >
       {emoji}
-      <div className="absolute -bottom-1.5 -right-1.5 bg-[#2979ff] text-white p-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity shadow-sm">
+      {/* ATHENA FIX: Botão sempre visível (Regra 4 ENTJ) - removido opacity-0 */}
+      <div className="absolute -bottom-1.5 -right-1.5 bg-[#2979ff] text-white p-1 rounded-full opacity-60 group-hover:opacity-100 transition-opacity shadow-sm">
         <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
           <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
           <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
